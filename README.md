@@ -1,4 +1,6 @@
 bestrew
 =======
 
-for writers to keep track of what they're submitting for publication
+for writers to submissions of their manuscripts for publication
+
+brainstorming and potential features list: http://nocategories.net/ephemera/writing/writing-submission-tools/
