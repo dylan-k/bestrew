@@ -1,7 +1,7 @@
 
 
 TABLE: Submissions  
-DESCRIPTION: Each row describes a unique submission
+DESCRIPTION: Each row describes a unique submission  
 NOTE: If you submit multiple files, .zip or merge them first?  
 
 | FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
