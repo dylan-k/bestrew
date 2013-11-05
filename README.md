@@ -1,9 +1,11 @@
 bestrew
 =======
 
-for writers to track submissions of their manuscripts for publication
-
-brainstorming and potential features list: http://nocategories.net/ephemera/writing/writing-submission-tools/
+<dl>
+  <dt>bestrew</dt>
+  <dd>verb (literary)</dd>
+  <dd>to cover or partly cover with scattered objects</dd>
+</dl>
 
 This is a database tool intended to help writers to keep track of their submissions, publications they'd like to submit to, and the manuscripts that they would like to publish. It is based on several sources. 
 
@@ -12,11 +14,13 @@ This is a database tool intended to help writers to keep track of their submissi
 - My [notes about submission tracking tools for writers](http://nocategories.net/ephemera/writing/writing-submission-tools/), overview of existing methods, feature wish list, etc.
 
 ## Usage
-This database tool is designed to be free and to run on multiple platforms, so it relies on [LibreOffice](http://www.libreoffice.org/) Base, which is also free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. Install one of those two applications and then open the .odb file to begin. Be sure to enable macros.
+This database tool is designed to be free and to run on multiple platforms, so (at least at the moment) it relies on [LibreOffice](http://www.libreoffice.org/) Base, which is also free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. Install one of those two applications and then open the .odb file to begin. Be sure to enable macros.
 
 Documentation is coming soon. Please feel free to ask questions. For now, here's are some useful links:
-- [a write-up of the database design](https://gist.github.com/dylan-k/6878823)
+- [a write-up of the database design](https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md)
 - [ongoing conversation about the development of this database](http://en.libreofficeforum.org/node/6787)
+- [brainstorming and potential features list](http://nocategories.net/ephemera/writing/writing-submission-tools/)
+
 
 ## License
 
