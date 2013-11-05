@@ -13,6 +13,27 @@ This is a database tool intended to help writers to keep track of their submissi
 - Uses [Split_HSQLDB_Wizard_v3c.odb](http://forum.openoffice.org/en/forum/viewtopic.php?f=83&t=61183) for Base
 - My [notes about submission tracking tools for writers](http://nocategories.net/ephemera/writing/writing-submission-tools/), overview of existing methods, feature wish list, etc.
 
+## Features
+
+This simple database is designed to help writers track three things, and details about them:
+
+1. What have you submitted? ("manuscripts")
+    - title
+    - type
+    - status
+    - publication date
+    - publication venue
+    - a copy of the manuscript(s), as submitted
+2. Where have you submitted? ("venues")
+    - title
+    - type
+    - contact info.  
+    - submission guideline details
+3. What is the status of those submissions?
+    - how long have they been out?
+    - which manuscripts have been sent to which venues?
+    - (poets) include multiple manuscripts as part of a single submission?
+
 ## Usage
 This database tool is designed to be free and to run on multiple platforms, so (at least at the moment) it relies on [LibreOffice](http://www.libreoffice.org/) Base, which is also free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. Install one of those two applications and then open the .odb file to begin. Be sure to enable macros.
 
