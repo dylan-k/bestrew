@@ -30,8 +30,8 @@ DESCRIPTION: Each row describes a unique work that could be submitted
 | venue_nbr   | integer    | Foreign Key for Venue if published                  |
 
 
-TABLE: Sub_Mss
-DESCRIPTION: Describes one-to-many relationships between submissions and manuscripts.
+TABLE: Sub_Mss  
+DESCRIPTION: Describes one-to-many relationships between submissions and manuscripts.  
 
 | FIELD NAME  | DATA TYPE  | DESCRIPTION                                         |
 |-------------|------------|-----------------------------------------------------|
