@@ -1,5 +1,6 @@
 
 
+
 TABLE: Submissions  
 DESCRIPTION: Each row describes a unique submission  
 NOTE: If you submit multiple files, .zip or merge them first?  
@@ -15,6 +16,8 @@ NOTE: If you submit multiple files, .zip or merge them first?
 | sub_status      | text       | Options like 'pending' 'accepted' or 'declined'    |
 | sub_note        | text       | Useful for storing archive of e-mail threads, etc. |
 | sub_file        | text       | Filename of submission (filename or path?)         |
+| sub_filedata    | BLOB       | Actual file(s) that were submitted                 |
+
 
 
 TABLE: Manuscripts  
@@ -29,14 +32,6 @@ DESCRIPTION: Each row describes a unique work that could be submitted
 | pub_date    | date       | Date this manuscript was published                  |
 | venue_nbr   | integer    | Foreign Key for Venue if published                  |
 
-
-TABLE: Sub_Mss  
-DESCRIPTION: Describes one-to-many relationships between submissions and manuscripts.  
-
-| FIELD NAME  | DATA TYPE  | DESCRIPTION                                         |
-|-------------|------------|-----------------------------------------------------|
-| sub_nbr     | integer    | Foreign Key, refers to a submission ID              |
-| mss_nbr     | integer    | Foreign Key, refers to a manuscript ID              |
 
 
 TABLE: Venues  
