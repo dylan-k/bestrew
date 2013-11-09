@@ -3,7 +3,6 @@
 
 TABLE: Submissions  
 DESCRIPTION: Each row describes a unique submission  
-NOTE: If you submit multiple files, .zip or merge them first?  
 
 | FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
 |-----------------|------------|----------------------------------------------------|
@@ -15,8 +14,17 @@ NOTE: If you submit multiple files, .zip or merge them first?
 | reply_date      | date       | Reply date                                         |
 | sub_status      | text       | Options like 'pending' 'accepted' or 'declined'    |
 | sub_note        | text       | Useful for storing archive of e-mail threads, etc. |
-| sub_file        | text       | Filename of submission (filename or path?)         |
-| sub_filedata    | BLOB       | Actual file(s) that were submitted                 |
+
+
+TABLE: MSS_SUBS  
+DESCRIPTION: There is a one-to-many relationship from Submissions to Manuscripts  
+NOTE: If you submit multiple files, .zip or merge them first?  
+      Manuscrpts can undergo revisions from one submission to the next  
+      It is useful to store a reference to which (git?) version was sent  
+
+| FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
+|-----------------|------------|----------------------------------------------------|
+| sub_file        | text       | Path/Filename/Version of submission                |
 
 
 
