@@ -7,8 +7,6 @@ DESCRIPTION: Each row describes a unique submission
 | FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
 |-----------------|------------|----------------------------------------------------|
 | sub_id          | integer    | Primary Key for submissions table                  |
-| venue_nbr       | integer    | Foreign Key to indicate a Venue                    |
-| mss_nbr         | integer    | Foreign Key to indicate a Manuscript               |
 | cover_letter    | text       | Text-only contents of submission cover letter      |
 | send_date       | date       | Submission date                                    |
 | reply_date      | date       | Reply date                                         |
@@ -24,6 +22,9 @@ NOTE: If you submit multiple files, .zip or merge them first?
 
 | FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
 |-----------------|------------|----------------------------------------------------|
+| sub_nbr         | integer    | Foreign Key to indicate a Submission               |
+| venue_nbr       | integer    | Foreign Key to indicate a Venue                    |
+| mss_nbr         | integer    | Foreign Key to indicate a Manuscript               |
 | sub_file        | text       | Path/Filename/Version of submission                |
 
 
