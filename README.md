@@ -1,11 +1,9 @@
 bestrew
 =======
 
-<dl>
-  <dt>bestrew</dt>
-  <dd>verb (literary)</dd>
-  <dd>to cover or partly cover with scattered objects</dd>
-</dl>
+bestrew  
+verb (literary)  
+to cover or partly cover with scattered objects  
 
 This is a database tool intended to help writers to keep track of their submissions, publications they'd like to submit to, and the manuscripts that they would like to publish. 
 
@@ -38,8 +36,6 @@ This simple database is designed to help writers track three things, and details
 
 This database tool is designed to be free and to run on multiple platforms, so (at least at the moment) it relies on [LibreOffice](http://www.libreoffice.org/) Base, which is also free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. Install one of those two applications and then open the .odb file to begin. Be sure to enable macros.
 
-Documentation is coming soon. 
-
 
 ## License
 
@@ -54,9 +50,11 @@ This project is based on several sources.
 - Uses [Split_HSQLDB_Wizard_v3c.odb](http://forum.openoffice.org/en/forum/viewtopic.php?f=83&t=61183) for Base
 - My [notes about submission tracking tools for writers](http://nocategories.net/ephemera/writing/writing-submission-tools/), overview of existing methods, feature wish list, etc.
 
-Here are some useful links:
+Here are some useful other links:
+
 - [a write-up of the database design](https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md)
 - [ongoing conversation about the development of this database](http://en.libreofficeforum.org/node/6787)
+- [other applications and scripts designed for submission tracking](http://nocategories.net/ephemera/writing/writing-submission-tools/#apps)
 
 
 ## Changelog
