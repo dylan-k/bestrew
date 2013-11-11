@@ -9,6 +9,8 @@ bestrew
 
 This is a database tool intended to help writers to keep track of their submissions, publications they'd like to submit to, and the manuscripts that they would like to publish. 
 
+Currently, the database is implemented using LibreOffice Base, although I'm considering a shift to TiddlyWiki5, since it is more lightweight and portable.
+
 
 ## Features
 
@@ -59,9 +61,11 @@ Here are some useful links:
 
 ## Changelog
 
+v 0.6 changelog:
+- added ability to store local filepaths to describe the file(s) that were submitted
+
 v 0.5 changelog:
 - fixed a glitch related to portability to Windows
-- added "sub_filedata" field to store BLOB data, similar to original Writer's Database
 - created "bestrew" project @ github for hosting and version control
 
 v 0.4 changelog:
