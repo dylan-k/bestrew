@@ -1550,10 +1550,10 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div list="[[Test Submission]] ReadMe Questions DataModel Submissions WorksIndex VenuesIndex" title="$:/StoryList">
+<div list="[[Example Venue Record 2]] Questions [[Test Submission]] ReadMe Submissions WorksIndex VenuesIndex" title="$:/StoryList">
 <pre></pre>
 </div>
-<div modified="201311120447035" title="$:/HistoryList" type="application/json">
+<div modified="201311120503867" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;SiteTitle&quot;,
@@ -1962,6 +1962,61 @@ Error message and password prompt
             &quot;bottom&quot;: 175.296875,
             &quot;height&quot;: 16
         }
+    },
+    {
+        &quot;title&quot;: &quot;Test Submission&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 283.296875,
+            &quot;left&quot;: 92,
+            &quot;width&quot;: 16,
+            &quot;right&quot;: 108,
+            &quot;bottom&quot;: 299.296875,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Questions&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 268.890625,
+            &quot;left&quot;: 777,
+            &quot;width&quot;: 72,
+            &quot;right&quot;: 849,
+            &quot;bottom&quot;: 284.890625,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Test Submission&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 305.296875,
+            &quot;left&quot;: 92,
+            &quot;width&quot;: 16,
+            &quot;right&quot;: 108,
+            &quot;bottom&quot;: 321.296875,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Example Venue Record 2&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 512.296875,
+            &quot;left&quot;: 92,
+            &quot;width&quot;: 16,
+            &quot;right&quot;: 108,
+            &quot;bottom&quot;: 528.296875,
+            &quot;height&quot;: 16
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Example Venue Record 2&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 512.296875,
+            &quot;left&quot;: 92,
+            &quot;width&quot;: 16,
+            &quot;right&quot;: 108,
+            &quot;bottom&quot;: 528.296875,
+            &quot;height&quot;: 16
+        }
     }
 ]</pre>
 </div>
@@ -2112,10 +2167,10 @@ VenuesIndex</pre>
 * enter notes (venue_note)
 * indicate yes/no if venue accepts simultaneous submissions (venue_simul)</pre>
 </div>
-<div created="201311110255005" modified="201311120447850" tags="submissions" title="Submissions">
+<div created="201311110255005" modified="201311120457588" tags="submissions" title="Submissions">
 <pre>This entry should become a list of all submissions. For each, list all the values mentioned by the Submissions table in [[DataModel]]
 
-&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;ID&lt;/th&gt; &lt;th&gt;Send Date&lt;/th&gt; &lt;th&gt;Reply Date&lt;/th&gt; &lt;th&gt;Status&lt;/th&gt; &lt;!--&lt;th&gt;Pub. Date&lt;/th&gt; &lt;th&gt;Pub. Venue&lt;/th&gt;--&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;$list filter=&quot;[!has[draft.of]has[sub_id]sort[title]]&quot;&gt; &lt;tr&gt; &lt;td&gt;&lt;$link to={{!!title}}&gt;#&lt;$view field=&quot;sub_id&quot;/&gt;&lt;/$link&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;send_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;send_date&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;reply_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;reply_date&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;sub_status&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;sub_status&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;!--&lt;td&gt;&lt;$edit field=&quot;pub_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;pub_date&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_nbr&quot; type=&quot;number&quot;&gt;&lt;$view field=&quot;venue_nbr&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt;--&gt; &lt;/tr&gt; &lt;/$list&gt; &lt;/tbody&gt; &lt;/table&gt;
+&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;ID&lt;/th&gt; &lt;th&gt;Send Date&lt;/th&gt; &lt;th&gt;Reply Date&lt;/th&gt; &lt;th&gt;Status&lt;/th&gt; &lt;!--&lt;th&gt;Pub. Date&lt;/th&gt; &lt;th&gt;Pub. Venue&lt;/th&gt;--&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;$list filter=&quot;[!has[draft.of]has[sub_id]sort[title]]&quot;&gt; &lt;tr&gt; &lt;td&gt;&lt;$link to={{!!title}}&gt;#&lt;$view field=&quot;sub_id&quot;/&gt;&lt;/$link&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit-text field=&quot;send_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;send_date&quot;/&gt;&lt;/$edit-text&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit-text field=&quot;reply_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;reply_date&quot;/&gt;&lt;/$edit-text&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;sub_status&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;sub_status&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;!--&lt;td&gt;&lt;$edit field=&quot;pub_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;pub_date&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_nbr&quot; type=&quot;number&quot;&gt;&lt;$view field=&quot;venue_nbr&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt;--&gt; &lt;/tr&gt; &lt;/$list&gt; &lt;/tbody&gt; &lt;/table&gt;
 
 This will be more useful once it shows the name(s) of the work(s) that were submitted.</pre>
 </div>
@@ -2125,7 +2180,7 @@ This will be more useful once it shows the name(s) of the work(s) that were subm
 * Setup first Tiddlywiki for this project
 * Had fun</pre>
 </div>
-<div created="201311110234002" modified="201311120444861" tags="Docs" title="ReadMe">
+<div created="201311110234002" modified="201311120445001" tags="Docs" title="ReadMe">
 <pre>! Welcome!
 
 !!Welcome to Bestrew, a tool for writers to keep track of what they've written, where they've sent their writings and what they've published. I called it &quot;bestrew&quot; because it's a funny literary word, rarely used, but which means &quot;to spread around.&quot;
@@ -2153,7 +2208,7 @@ This is TiddlyWiki5 version //&lt;&lt;version&gt;&gt;//
 <div created="201311110400005" modified="201311110400006" title="New Tiddler">
 <pre>&lt;img src=&quot;http://placehold.it/350x150&quot;&gt;</pre>
 </div>
-<div created="201311110226005" modified="201311120446282" pub_date="" tags="works" title="WorksForm" venue_nbr="" work_id="1" work_status="open" work_title="Test Title 2" work_type="short story">
+<div created="201311110226005" modified="201311120446002" pub_date="" tags="works" title="WorksForm" venue_nbr="" work_id="1" work_status="open" work_title="Test Title 2" work_type="short story">
 <pre>&lt;$button message=&quot;tw-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt;&gt;clone this tiddler&lt;/$button&gt;
 
 Here, I hope it will be possible for the user to do the following via a form:
@@ -2180,7 +2235,7 @@ here's an attempted entry form:
 text here
 </pre>
 </div>
-<div created="201311120159001" modified="201311120446520" tags="works" title="WorksIndex">
+<div created="201311120159001" modified="201311120446000" tags="works" title="WorksIndex">
 <pre>This entry contains a list of all the &quot;Works&quot; (or manuscripts) that have been entered so far. It uses a list filter to display any non-draft entry that contains the field &quot;work_id&quot;.
 
 &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;ID&lt;/th&gt; &lt;th&gt;Title&lt;/th&gt; &lt;th&gt;Type&lt;/th&gt; &lt;th&gt;Status&lt;/th&gt; &lt;!--&lt;th&gt;Pub. Date&lt;/th&gt; &lt;th&gt;Pub. Venue&lt;/th&gt;--&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;$list filter=&quot;[!has[draft.of]has[work_id]sort[title]]&quot;&gt; &lt;tr&gt; &lt;td&gt;&lt;$link to={{!!title}}&gt;#&lt;$view field=&quot;work_id&quot;/&gt;&lt;/$link&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;work_title&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;work_title&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;work_type&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;work_type&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;work_status&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;work_status&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;!--&lt;td&gt;&lt;$edit field=&quot;pub_date&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;pub_date&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_nbr&quot; type=&quot;number&quot;&gt;&lt;$view field=&quot;venue_nbr&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt;--&gt; &lt;/tr&gt; &lt;/$list&gt; &lt;/tbody&gt; &lt;/table&gt;
@@ -2197,7 +2252,7 @@ I've got the &quot;clone this&quot; button here, too, to make it easier to creat
 
 </pre>
 </div>
-<div created="201311120145006" modified="201311120440904" tags="Docs" title="DataModel">
+<div created="201311120145006" modified="201311120441004" tags="Docs" title="DataModel">
 <pre>Here's a list of all the various types of information I'm trying to keep track of with this wiki. I refer to this a lot while I'm building it. It was originally written for SQL but it seems to be working well here, too.
 
 
@@ -2274,19 +2329,19 @@ I've got the &quot;clone this&quot; button here, too, to make it easier to creat
 
 </pre>
 </div>
-<div cover_letter="" created="201311110254009" modified="201311120446050" reply_date="10/02/2013" send_date="10/01/2013" sub_id="1" sub_status="declined" tags="submissions" title="Test Submission 1">
+<div cover_letter="" created="201311110254009" modified="201311120458051" reply_date="2013-11-07" send_date="2013-11-01" sub_id="1" sub_status="declined" tags="submissions" title="Test Submission 1">
 <pre>&lt;$button message=&quot;tw-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt;&gt;clone this tiddler&lt;/$button&gt;
 
 This is an example/test submission record. 
 </pre>
 </div>
-<div cover_letter="" created="201311110254009" modified="201311120448379" reply_date="" send_date="11/11/2013" sub_id="0" sub_status="open" tags="submissions" title="Test Submission">
+<div cover_letter="" created="201311110254009" modified="201311120459454" reply_date="" send_date="2013-11-11" sub_id="0" sub_status="open" tags="submissions" title="Test Submission">
 <pre>&lt;$button message=&quot;tw-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt;&gt;clone this tiddler&lt;/$button&gt;
 
 This is an example/test submission record. 
 </pre>
 </div>
-<div created="201311120323002" modified="201311120449364" tags="Docs" title="Questions">
+<div created="201311120323002" modified="201311120459701" tags="Docs" title="Questions">
 <pre>1. I can't seem to get the type=&quot;date&quot; attribute of $edit to work. The HTML input tag that is generated retains its &quot;text&quot; value for the type attribute, despite the setting.
 
 2. I was able to create a table that both displays and edits values from existing entries' fields. Very exciting!  Add New Item&quot; button would be great here (to add a new tiddler to the set that is listed), but is it possible?
@@ -2295,12 +2350,12 @@ This is an example/test submission record.
 
 4. is it possible to create a boolean or checkbox input for editing a field value?
 
-5. Can you do math within the list filter critera? for example I might like to do a filter to get tiddlers where work.work_id equals submission.work_nbr</pre>
+5. Can you do math within the list filter critera? for example I might like to do a filter to get tiddlers where work.work_id equals submission.work_nbr -- or can you compare one date to another?</pre>
 </div>
-<div created="201311120332001" modified="201311120440145" title="VenuesIndex">
+<div created="201311120332001" modified="201311120511913" title="VenuesIndex">
 <pre>This entry contains a list of all the &quot;Venues&quot; (or places where you could send the works) that have been entered so far. It uses a list filter to display any non-draft entry that contains the field &quot;venue_id&quot;.
 
-&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;ID&lt;/th&gt; &lt;th&gt;Venue Title&lt;/th&gt; &lt;th&gt;E-mail&lt;/th&gt; &lt;th&gt;URL&lt;/th&gt; &lt;th&gt;Simul?&lt;/th&gt; &lt;!--&lt;th&gt;Pub. Venue&lt;/th&gt;--&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;$list filter=&quot;[!has[draft.of]has[venue_id]sort[title]]&quot;&gt; &lt;tr&gt; &lt;td&gt;&lt;$link to={{!!title}}&gt;#&lt;$view field=&quot;venue_id&quot;/&gt;&lt;/$link&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_title&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;venue_title&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_address&quot; type=&quot;date&quot;&gt;&lt;$view field=&quot;venue_contact&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_url&quot; type=&quot;text&quot;&gt;&lt;$view field=&quot;venue_address&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;td&gt;&lt;$edit field=&quot;venue_simul&quot;&gt;&lt;$view field=&quot;venue_simul&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt; &lt;!--&lt;td&gt;&lt;$edit field=&quot;venue_nbr&quot; type=&quot;number&quot;&gt;&lt;$view field=&quot;venue_nbr&quot;/&gt;&lt;/$edit&gt;&lt;/td&gt;--&gt; &lt;/tr&gt; &lt;/$list&gt; &lt;/tbody&gt; &lt;/table&gt;
+&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;ID&lt;/th&gt; &lt;th&gt;Venue Title&lt;/th&gt; &lt;th&gt;E-mail&lt;/th&gt; &lt;th&gt;URL&lt;/th&gt; &lt;th&gt;Simul?&lt;/th&gt; &lt;!--&lt;th&gt;Pub. Venue&lt;/th&gt; --&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;$list filter=&quot;[!has[draft.of]has[venue_id]sort[title]]&quot;&gt; &lt;tr&gt; &lt;td&gt; &lt;$link to={{!!title}}&gt; # &lt;$view field=&quot;venue_id&quot;/&gt; &lt;/$link&gt; &lt;/td&gt; &lt;td&gt; &lt;$edit field=&quot;venue_title&quot; type=&quot;date&quot;&gt; &lt;$view field=&quot;venue_title&quot;/&gt; &lt;/$edit&gt; &lt;/td&gt; &lt;td&gt; &lt;$edit-text field=&quot;venue_address&quot; type=&quot;email&quot;&gt; &lt;$view field=&quot;venue_address&quot;/&gt; &lt;/$edit-text&gt; &lt;/td&gt; &lt;td&gt; &lt;$edit-text field=&quot;venue_url&quot; type=&quot;url&quot;&gt; &lt;$view field=&quot;venue_url&quot;/&gt; &lt;/$edit-text&gt; &lt;/td&gt; &lt;td&gt; &lt;$edit field=&quot;venue_simul&quot;&gt; &lt;$view field=&quot;venue_simul&quot;/&gt; &lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/$list&gt; &lt;/tbody&gt; &lt;/table&gt;
 
 </pre>
 </div>
@@ -2314,7 +2369,7 @@ This is an example/test submission record.
 
 &lt;$button message=&quot;tw-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt;&gt;clone this tiddler&lt;/$button&gt;</pre>
 </div>
-<div created="201311120338000" modified="201311120342003" title="Example Venue Record 2" venue_address="test@example.com" venue_id="2" venue_person="" venue_simul="no" venue_title="Story Magazine" venue_type="website" venue_url="www.test.com">
+<div created="201311120338000" modified="201311120512498" title="Example Venue Record 2" venue_address="test@example.com" venue_id="2" venue_person="" venue_simul="no" venue_title="Story Magazine" venue_type="website" venue_url="www.test.com">
 <pre>This is an example of a &quot;Venue&quot; record. Let's pretend this is a publisher or literary journal.
 
 &lt;$button message=&quot;tw-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt;&gt;clone this tiddler&lt;/$button&gt;</pre>
