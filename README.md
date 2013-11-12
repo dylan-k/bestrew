@@ -1,11 +1,9 @@
 bestrew
 =======
 
-bestrew  
-verb (literary)  
-to cover or partly cover with scattered objects  
+tiddlywiki edition
 
-This is a database tool intended to help writers to keep track of their submissions, publications they'd like to submit to, and the manuscripts that they would like to publish. 
+This is a tool intended to help writers to keep track of their submissions, publications they'd like to submit to, and the manuscripts that they would like to publish. 
 
 Currently, the database is implemented using LibreOffice Base, although I'm considering a shift to TiddlyWiki5, since it is more lightweight and portable.
 

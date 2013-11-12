@@ -14,7 +14,7 @@ DESCRIPTION: Each row describes a unique submission
 | sub_note        | text       | Useful for storing archive of e-mail threads, etc. |
 
 
-TABLE: MSS_SUBS  
+TABLE: works_SUBS  
 DESCRIPTION: There is a one-to-many relationship from Submissions to Manuscripts  
 NOTE: If you submit multiple files, .zip or merge them first?  
       Manuscrpts can undergo revisions from one submission to the next  
@@ -24,22 +24,22 @@ NOTE: If you submit multiple files, .zip or merge them first?
 |-----------------|------------|----------------------------------------------------|
 | sub_nbr         | integer    | Foreign Key to indicate a Submission               |
 | venue_nbr       | integer    | Foreign Key to indicate a Venue                    |
-| mss_nbr         | integer    | Foreign Key to indicate a Manuscript               |
+| works_nbr       | integer    | Foreign Key to indicate a Manuscript               |
 | sub_file        | text       | Path/Filename/Version of submission                |
 
 
 
-TABLE: Manuscripts  
+TABLE: Works  
 DESCRIPTION: Each row describes a unique work that could be submitted  
 
-| FIELD NAME  | DATA TYPE  | DESCRIPTION                                         |
-|-------------|------------|-----------------------------------------------------|
-| mss_id      | integer    | Primary Key for Manuscripts table                   |
-| mss_title   | text       | Title of manuscript                                 |
-| mss_type    | text       | e.g. 'poem' 'novel' 'screenplay' etc.               |
-| mss_status  | text       | e.g. 'open' 'in-progress' 'trunked' or 'published'  |
-| pub_date    | date       | Date this manuscript was published                  |
-| venue_nbr   | integer    | Foreign Key for Venue if published                  |
+| FIELD NAME   | DATA TYPE  | DESCRIPTION                                         |
+|--------------|------------|-----------------------------------------------------|
+| works_id     | integer    | Primary Key for Manuscripts table                   |
+| works_title  | text       | Title of manuscript                                 |
+| works_type   | text       | e.g. 'poem' 'novel' 'screenplay' etc.               |
+| works_status | text       | e.g. 'open' 'in-progress' 'trunked' or 'published'  |
+| pub_date     | date       | Date this manuscript was published                  |
+| venue_nbr    | integer    | Foreign Key for Venue if published                  |
 
 
 
