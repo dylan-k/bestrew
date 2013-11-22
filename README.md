@@ -41,7 +41,9 @@ Beyond simple entry of data into a good structure, the writer would like to have
 
 - **submission count** - each time a work is listed as part of a submission record, add 1 to the submission count. if a work has been submitted many times, but status remains unpublished, that's notable. Likewise, it is useful to count how many times you've submitted to a particular venue, to help avoid overdoing it.
 
-- **simultaneous submission monitoring** - some venues accept simultaneous submissions. most do not. This can get tricky to watch over, without some help. If a work is already part of an active submission, alert the user if it is entered again.
+- **simultaneous submission monitoring** - some venues accept simultaneous submissions. Most do not. This can get tricky to watch over, without some help. If a work is already part of an active submission, alert the user if it is entered again. Similarly, if the user already has an active submission with any venue, an alert should appear if they try to send an additional one.
+
+- **submitting multiple works** - not all writers are submitting one short story at a time. For example, poets send submisions that can inclue 5-10 works as part of a single submission. This does not count as a "simultaneous submission" as described above.
 
 - **smart updates** - if the user marks a submission as "accepted" or "published" then mark the published work as published, accordingly, note the venue and date of publication, and remove the work from circulation so that it isn't available to be submitted again.
 
