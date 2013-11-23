@@ -9,9 +9,7 @@ This is a tool intended to help writers (or other creatives) to keep track of th
 
 **note**: I'm just a writer looking for tools to help other writers do more powerful things with their text. As a humble HTML/CSS developer, I'm new to GitHub and to application development in general, so I could use any input at all. I consider this project to be a fun excuse to learn new things. 
 
-I've tried [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/), but they each gave me a sense of the goldilocks problem: most of them were cold porridge. 
-
-Currently, the database is implemented using LibreOffice Base, although I'm considering a shift to TiddlyWiki5, since it is more lightweight and portable.
+I've tried [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/), but they each gave me a sense of the goldilocks problem: none of them were just right. 
 
 
 ## Features
@@ -41,7 +39,7 @@ Beyond simple entry of data into a good structure, the writer would like to have
 
 - **submission count** - each time a work is listed as part of a submission record, add 1 to the submission count. if a work has been submitted many times, but status remains unpublished, that's notable. Likewise, it is useful to count how many times you've submitted to a particular venue, to help avoid overdoing it.
 
-- **simultaneous submission monitoring** - some venues accept simultaneous submissions. Most do not. This can get tricky to watch over, without some help. If a work is already part of an active submission, alert the user if it is entered again. Similarly, if the user already has an active submission with any venue, an alert should appear if they try to send an additional one.
+- **simultaneous submission monitoring** - some venues accept simultaneous submissions. Most do not. This can get tricky to watch over, without some help. If a work is already part of an active submission, alert the user if it is entered again. Similarly, if the user already has an active submission with any venue, an alert should appear if they try to send an additional submission to that venue.
 
 - **submitting multiple works** - not all writers are submitting one short story at a time. For example, poets send submisions that can inclue 5-10 works as part of a single submission. This does not count as a "simultaneous submission" as described above.
 
@@ -49,15 +47,17 @@ Beyond simple entry of data into a good structure, the writer would like to have
 
 - **combo box** - the user is likely to use the "submissions" form most often. Here, there's a place to make note of the work submitted. Also, there's a place to make note of the venue that work was submitted to. Both works and venues are described in detail elsewhere, so it would be useful to have a thing called a "combo box" ( http://en.wikipedia.org/wiki/Combo_box ). By default, the combo box would show all existing names, either of works or of venues. If you need to add one, just type it in the combo box, which will automatically associate the entry both with the submission record and also with a new record or either a work or a venue.
 
-- **days out** - a fairly standard feature of submissions trackers: compare date sent to either date replied, or to the current date, to determine the number of days the submission has been active. Useful for determining whether up a followup e-mail is needed.
+- **days out** - a fairly standard feature of submissions trackers is to compare date sent to either date replied, or to the current date, to determine the number of days the submission has been active. Useful for determining whether up a followup e-mail is needed.
 
-- **import/export** - probably a more advanced feature than I know how to build, but most other apps and spreadsheets and databases can export at least a .csv file. It would be useful to be able to import/export these.
+- **import/export** - probably a more advanced feature than I know how to build, but most other apps and spreadsheets and databases can export at least a `.csv` file. It would be useful to be able to import/export these.
 
-## (Current) Usage
+## Usage
 
-This database tool is designed to be free and to run on multiple platforms, so (at least at the moment) it relies on [LibreOffice](http://www.libreoffice.org/) Base, which is also free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. Install one of those two applications and then open the .odb file to begin. Be sure to enable macros.
+Although it is only in Alpha, I have started experimenting with Tiddlywiki5, as a platform for this application. That Tiddlywiki file is a part of this repository, located at `/tiddlywiki/bestrew.html`. Download this file to your computer and open it with any browser to begin using it.
 
-Although it is only in Alpha, I have started experimenting with Tiddlywiki5, as a possible platform for this application. That Tiddlywiki file is also a part of this repository. 
+This database tool was originally built using [LibreOffice](http://www.libreoffice.org/) Base, which is free to install. It is also compatible with [OpenOffice](http://www.openoffice.org/) Base. To use this version, install one of those two applications, then open the file at `/base/writers-database.odb`. The file requires the entire contents of the `base` directory, in order to function, but you may rename the file or the directory. Once you've opened the file, be sure to enable macros, if prompted to do so.
+
+
 
 
 ## Links
