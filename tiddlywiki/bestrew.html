@@ -136,6 +136,7 @@ Error message and password prompt
 </p><p><li>$:/skeletons/submission</li>
 </p><p><li>$:/skeletons/task</li>
 </p><p><li>$:/skeletons/venue</li>
+</p><p><li>$:/skeletons/venue 1</li>
 </p><p><li>$:/skeletons/work</li>
 </p><p><li>$:/state/tab-{-1647438403}</li>
 </p><p><li>$:/state/tab-{-202548533}</li>
@@ -153,6 +154,7 @@ Error message and password prompt
 </p><p><li>$:/themes/tiddlywiki/vanilla/settings</li>
 </p><p><li>_sandbox tiddler</li>
 </p><p><li>add dropdown widget to enter Status field for works and submissions.</li>
+</p><p><li>add to venue a field called venue_genre</li>
 </p><p><li>another example submission</li>
 </p><p><li>bug! multi-dropdowns happen</li>
 </p><p><li>DataModel</li>
@@ -181,8 +183,10 @@ Error message and password prompt
 </p><p><li>List-Venues</li>
 </p><p><li>List-Works</li>
 </p><p><li>merge custom field titles and tiddler title</li>
+</p><p><li>New Tiddler</li>
 </p><p><li>Questions</li>
 </p><p><li>ReadMe</li>
+</p><p><li>rename venue_type to venue_medium</li>
 </p><p><li>SiteSubtitle</li>
 </p><p><li>SiteTitle</li>
 </p><p><li>ToDo</li>
@@ -1822,7 +1826,7 @@ DevNotes</pre>
 <div created="20131130213928453" modified="20131130214122199" title="$:/GoogleAnalyticsDomain">
 <pre>nocategories.net</pre>
 </div>
-<div created="20131208164014118" modified="20131218004943048" title="$:/HistoryList" type="application/json">
+<div created="20131208164014118" modified="20131218044508849" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Untitled&quot;
@@ -3269,6 +3273,30 @@ DevNotes</pre>
     },
     {
         &quot;title&quot;: &quot;dropdown for a submission's \&quot;work\&quot;&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '$:/skeletons/venue 1'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;$:/skeletons/venue 1&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '$:/skeletons/task 1'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;rename venue_type to venue_medium&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'New Tiddler'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;New Tiddler&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of '$:/skeletons/task 1'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;add to venue a field called venue_genre&quot;
     }
 ]</pre>
 </div>
@@ -3388,6 +3416,21 @@ This entry is a &quot;skeleton&quot;. It represents an example of a single ''ven
 &lt;$button message=&quot;tw-new-tiddler&quot; param=&quot;$:/skeletons/venue&quot;&gt;Enter New Venue&lt;/$button&gt;
 </pre>
 </div>
+<div created="20131111025200005" modified="20131218043841647" tags="venues" title="$:/skeletons/venue 1" venue_email="" venue_id="" venue_person="" venue_simul="" venue_title="" venue_type="" venue_url="">
+<pre>''notes go here. delete the text here but you may want to keep everything below the line.''
+
+This entry is a &quot;skeleton&quot;. It represents an example of a single ''venue''. It is also the template for creating new records of this type, described by the various fields. To change the data you want to record for each entry of this type, edit the fields associated with this skeleton, but be careful. The index list is currently built around these default fields. Editing the fields will only change the fields available for ''new'' entries, so it's best to make such changes early.
+
+---
+
+
+&lt;table class=&quot;tw-view-field-table&quot;&gt; &lt;tbody&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;created&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$view field=&quot;created&quot;&gt;&lt;/$view&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;modified&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$view field=&quot;modified&quot;&gt;&lt;/$view&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_address&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_address&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_id&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_id&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_person&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_person&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_simul&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_simul&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_title&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_title&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_type&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_type&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;tw-view-field&quot;&gt; &lt;td class=&quot;tw-view-field-name&quot;&gt;venue_url&lt;/td&gt; &lt;td class=&quot;tw-view-field-value&quot;&gt; &lt;$edit field=&quot;venue_url&quot;&gt;&lt;/$edit&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;
+
+
+
+&lt;$button message=&quot;tw-new-tiddler&quot; param=&quot;$:/skeletons/venue&quot;&gt;Enter New Venue&lt;/$button&gt;
+</pre>
+</div>
 <div created="20131111022200005" modified="20131218004222724" pub_date="" tags="works" title="$:/skeletons/work" venue_nbr="" work_id="" work_status="" work_title="" work_type="">
 <pre>''notes go here. delete the text here but you may want to keep everything below the line.''
 
@@ -3425,7 +3468,7 @@ This entry is a &quot;skeleton&quot;. It represents an example of a single ''wor
 <div created="20131208164014123" modified="20131201041805747" title="$:/state/tiddlerInfo-{-1601690243}">
 <pre>(815,85,21,31)</pre>
 </div>
-<div list="ReadMe Index DevNotes" title="$:/StoryList">
+<div list="[[add to venue a field called venue_genre]] [[New Tiddler]] [[rename venue_type to venue_medium]] [[$:/skeletons/venue 1]] ReadMe Index DevNotes" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20131130212023098" modified="20131130212058913" title="$:/temp/search">
@@ -3529,6 +3572,9 @@ text here
 </div>
 <div created="20131208174114796" modified="20131218002707818" tags="task done" title="add dropdown widget to enter Status field for works and submissions.">
 <pre>add dropdown widget to enter Status field for works and submissions.</pre>
+</div>
+<div created="20131208174114796" modified="20131218044508846" tags="task" title="add to venue a field called venue_genre">
+<pre>as opposed to &quot;type&quot; or &quot;medium&quot;... &quot;genre&quot; is something like &quot;science fiction&quot; or &quot;poetry&quot; etc.</pre>
 </div>
 <div created="20131111025400009" modified="20131218004449326" reply_date="" send_date="" sub_id="03" sub_status="" sub_venue="whatever venue" sub_work="whatever work" tags="submissions" title="another example submission" type="">
 <pre>''notes go here. delete the text here but you may want to keep everything below the line.''
@@ -3802,6 +3848,9 @@ This entry is a &quot;skeleton&quot;. It represents an example of a single ''wor
 <div created="20131208174114796" modified="20131218003746796" tags="task" title="merge custom field titles and tiddler title">
 <pre>there's no real need to have TWO title fields, right? just use the built-in one.</pre>
 </div>
+<div created="20131218044410502" modified="20131218044410502" title="New Tiddler">
+<pre>Newly created tiddler</pre>
+</div>
 <div created="20131112032300002" modified="20131130215822647" tags="Docs" title="Questions">
 <pre>* is it possible to create a boolean or checkbox input for editing a field value?
 
@@ -3832,6 +3881,9 @@ To get started, see http://five.tiddlywiki.com/ for detailed instructions or you
 
 This is TiddlyWiki5 version //&lt;&lt;version&gt;&gt;//
 </pre>
+</div>
+<div created="20131208174114796" modified="20131218044407391" tags="task" title="rename venue_type to venue_medium">
+<pre>it makes more sense that way. venue_medium can be like &quot;website&quot; or &quot;print publication&quot; etc.</pre>
 </div>
 <div created="20131111022100005" modified="20131130220213841" title="SiteSubtitle">
 <pre>Manuscript Submission Tracking</pre>
