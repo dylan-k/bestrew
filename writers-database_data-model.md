@@ -1,4 +1,6 @@
-
+Note: this applies best to the LibreOffice Base edition of the Bestrew Application. 
+In the TiddlyWiki edition, `works_SUBS` does not exist.
+In the Sqlite edition, `works_subs` data is simply part of `submissions` 
 
 
 TABLE: Submissions  
