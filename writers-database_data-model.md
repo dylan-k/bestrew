@@ -22,7 +22,7 @@ DESCRIPTION: Each row describes a unique work that could be submitted
 | work_filename   | TEXT       | (IN PROGRESS)                                                                   |
 
 
-## 2. Where have you sent your work or where might you send it? 
+## 2. Where have you sent work? Where might you? 
 
 TABLE: Venues  
 DESCRIPTION: Each row describes a place where a submission could be sent  
@@ -41,7 +41,7 @@ DESCRIPTION: Each row describes a place where a submission could be sent
 | venue_note    | TEXT      | Notes about deadlines, preferences, etc.                  |
 
 
-## 3. Which works have you sent to which venues and what happened? 
+## 3. What have you sent out? What happened?
 
 TABLE: Submissions  
 DESCRIPTION: Each row describes a unique submission  
