@@ -1,10 +1,17 @@
 
+# Data Model for Bestrew Submissions Tracker
+
+This simple database is designed to help writers track three things, and details about them.
+
+
+## 1. What have you created?
+
 TABLE: Works  
 DESCRIPTION: Each row describes a unique work that could be submitted  
 
 | FIELD NAME      | DATA TYPE  | DESCRIPTION                                                                     |
 |-----------------|------------|---------------------------------------------------------------------------------|
-| work_id         | integer    | (Primary Key) for Manuscripts table                                             |
+| work_id         | INTEGER    | (Primary Key) for Manuscripts table                                             |
 | work_title      | TEXT       | Title of manuscript                                                             |
 | work_type       | TEXT       | e.g. 'poem' 'novel' 'screenplay' etc.                                           |
 | work_status     | TEXT       | e.g. 'open' 'in-progress' 'trunked' or 'published'                              |
@@ -12,16 +19,17 @@ DESCRIPTION: Each row describes a unique work that could be submitted
 | venue_nbr       | INTEGER    | (DEPRECATED) (Foreign key) for venue_id to indicate where a work was published  |
 | venue_name      | INTEGER    | (Foreign Key) for venue_title to indicate where a work was published            |
 | work_file       | BLOB       | stores copy of the work as BLOB data                                            |
-| work_filename   | TEXT       | (IN PROGRESS)   
+| work_filename   | TEXT       | (IN PROGRESS)                                                                   |
 
-                                                                |
+
+## 2. Where have you sent your work or where might you send it? 
 
 TABLE: Venues  
 DESCRIPTION: Each row describes a place where a submission could be sent  
 
 | FIELD NAME    | DATA TYPE | DESCRIPTION                                               |
 |---------------|-----------|-----------------------------------------------------------|
-| venue_id      | integer   | Primary Key for Venues table                              |
+| venue_id      | INTEGER   | Primary Key for Venues table                              |
 | venue_title   | TEXT      | Name of this venue                                        |
 | venue_url     | TEXT      | Link to publication or submission guidelines              |
 | venue_medium  | TEXT      | e.g. 'print' 'website' 'performance space' etc.           |
@@ -32,6 +40,8 @@ DESCRIPTION: Each row describes a place where a submission could be sent
 | venue_email   | TEXT      | Contact e-mail for venue                                  |
 | venue_note    | TEXT      | Notes about deadlines, preferences, etc.                  |
 
+
+## 3. Which works have you sent to which venues and what happened? 
 
 TABLE: Submissions  
 DESCRIPTION: Each row describes a unique submission  
@@ -47,19 +57,3 @@ DESCRIPTION: Each row describes a unique submission
 | sub_note        | TEXT       | Useful for storing archive of e-mail threads, etc.   |
 | sub_file        | BLOB       | Stores the file that was submitted as a data BLOB    |
 | sub_filename    | TEXT       | indicates what filename to use for sub_file          |    
-
-
-
-TABLE: works_SUBS  
-DESCRIPTION: **This is not currently implemented** but there could be a one-to-many relationship from Submissions to Manuscripts  
-NOTE: If you submit multiple files, .zip or merge them first?  
-      Manuscrpts can undergo revisions from one submission to the next  
-      It is useful to store a reference (git?) to which version was sent  
-
-| FIELD NAME      | DATA TYPE  | DESCRIPTION                                        |
-|-----------------|------------|----------------------------------------------------|
-| sub_nbr         | integer    | Foreign Key to indicate a Submission               |
-| venue_nbr       | integer    | Foreign Key to indicate a Venue                    |
-| works_nbr       | integer    | Foreign Key to indicate a Manuscript               |
-| sub_file        | BLOB       | Store a copy of the file that was submitted        |
-| sub_filename    | TEXT       | indicates what filename to use for sub_file        |

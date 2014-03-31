@@ -1,4 +1,4 @@
-# Bestrew, for spreading your work around
+# Bestrew, a submission tracker
 
 This is a tool intended to help writers (or other artists) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. I called it "bestrew" because it's a funny literary word, rarely used, but which means "to spread around." I made this because, after trying [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/),  none of them were just right for my needs. 
 
