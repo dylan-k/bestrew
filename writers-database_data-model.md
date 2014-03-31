@@ -1,19 +1,4 @@
 
-TABLE: Submissions  
-DESCRIPTION: Each row describes a unique submission  
-
-| FIELD NAME      | DATA TYPE  | DESCRIPTION                                          |
-|-----------------|------------|------------------------------------------------------|
-| sub_id          | INTEGER    | Primary Key for submissions table                    |
-| work_name       | TEXT       | Foreign Key, refers to work_title of submitted piece | 
-| cover_letter    | TEXT       | contents of submission cover letter                  |
-| send_date       | DATE       | Submission date                                      |
-| reply_date      | DATE       | Reply date                                           |
-| sub_status      | TEXT       | Options like 'pending' 'accepted' or 'declined'      |
-| sub_note        | TEXT       | Useful for storing archive of e-mail threads, etc.   |
-| sub_file        | BLOB       | Stores the file that was submitted as a data BLOB    |
-| sub_filename    | TEXT       | indicates what filename to use for sub_file          |    
-
 TABLE: Works  
 DESCRIPTION: Each row describes a unique work that could be submitted  
 
@@ -27,7 +12,9 @@ DESCRIPTION: Each row describes a unique work that could be submitted
 | venue_nbr       | INTEGER    | (DEPRECATED) (Foreign key) for venue_id to indicate where a work was published  |
 | venue_name      | INTEGER    | (Foreign Key) for venue_title to indicate where a work was published            |
 | work_file       | BLOB       | stores copy of the work as BLOB data                                            |
-| work_filename   | TEXT       | (IN PROGRESS)                                                                   |
+| work_filename   | TEXT       | (IN PROGRESS)   
+
+                                                                |
 
 TABLE: Venues  
 DESCRIPTION: Each row describes a place where a submission could be sent  
@@ -44,6 +31,23 @@ DESCRIPTION: Each row describes a place where a submission could be sent
 | venue_person  | TEXT      | Name of person at venue                                   |
 | venue_email   | TEXT      | Contact e-mail for venue                                  |
 | venue_note    | TEXT      | Notes about deadlines, preferences, etc.                  |
+
+
+TABLE: Submissions  
+DESCRIPTION: Each row describes a unique submission  
+
+| FIELD NAME      | DATA TYPE  | DESCRIPTION                                          |
+|-----------------|------------|------------------------------------------------------|
+| sub_id          | INTEGER    | Primary Key for submissions table                    |
+| work_name       | TEXT       | Foreign Key, refers to work_title of submitted piece | 
+| cover_letter    | TEXT       | contents of submission cover letter                  |
+| send_date       | DATE       | Submission date                                      |
+| reply_date      | DATE       | Reply date                                           |
+| sub_status      | TEXT       | Options like 'pending' 'accepted' or 'declined'      |
+| sub_note        | TEXT       | Useful for storing archive of e-mail threads, etc.   |
+| sub_file        | BLOB       | Stores the file that was submitted as a data BLOB    |
+| sub_filename    | TEXT       | indicates what filename to use for sub_file          |    
+
 
 
 TABLE: works_SUBS  

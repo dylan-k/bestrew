@@ -1,18 +1,11 @@
-bestrew
-=======
+# Bestrew, for spreading your work around
 
-bestrew  
-verb (literary)  
-to cover or partly cover with scattered objects 
+This is a tool intended to help writers (or other artists) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. I called it "bestrew" because it's a funny literary word, rarely used, but which means "to spread around." I made this because, after trying [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/),  none of them were just right for my needs. 
 
-This is a tool intended to help writers (or other creatives) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. 
-
-**note**: I'm just a writer looking for tools to help other writers do more powerful things with their text. As a humble HTML/CSS developer, I'm new to GitHub and to application development in general, so I could use any input at all. I consider this project to be a fun excuse to learn new things. 
-
-I've tried [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/), but they each gave me a sense of the goldilocks problem: none of them were just right. 
+I'm just a writer looking for tools to help other writers do more powerful things with their text. As a humble HTML/CSS developer, I'm new to GitHub, SQLite and to application/database development in general, so I could use any input at all. I consider this project to be a fun excuse to learn new things. 
 
 
-## Features
+## What Does it Do?
 
 This simple database is designed to help writers track three things, and details about them:
 
@@ -20,34 +13,35 @@ This simple database is designed to help writers track three things, and details
     - title
     - type
     - status
-    - publication date
-    - publication venue
-    - a copy of the manuscript(s), as submitted
-2. Where have you submitted? ("venues")
+    - is the work published? if so...
+        - publication venue
+        - publication date
+    - a recent copy of the work
+2. Where have you sent your work or where might you send it? ("venues")
     - title
     - type
     - contact info.  
     - submission guideline details
-3. What is the status of those submissions?
+3. Which works have you sent to which venues and what happened? ("submissions")
+    - which works have been sent out?
+    - to which venues?
     - how long have they been out?
-    - which manuscripts have been sent to which venues?
+    - what was the result of the submission?
     - (poets) include multiple manuscripts as part of a single submission?
 
+This is just a simple overview of what Bestrew is designed to track. For a more detailed overview, take a look at <a href="https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md">the data model.</a> To request new features, ask questions or to discuss, have a look at <a href="https://github.com/dylan-k/bestrew/issues">the issues page</a>.
 
-
-## Versions 
-
-During my experiments to build this application, I have tried to build it on several different platforms. I am indebted to the user communities for each of these, for their support. There are three different versions in this repository, each with its own `README` file for further details.
-
-1. [A database file for use with SQLite](https://github.com/dylan-k/bestrew/tree/master/sqlite). 
-2. [A database file for use with LibreOffice Base](https://github.com/dylan-k/bestrew/tree/master/base). 
-3. [A wiki built with TiddlyWiki5](https://github.com/dylan-k/bestrew/tree/master/tiddlywiki). 
- 
 
 ## Usage
 
-This is still an experimental application and may not be suitable for reliable use. That said, the Tiddlywiki and SQLite versions are most usable at the moment.
+**This version is a database file for use with SQLite**. 
 
+1. Install SQLite Software
+
+At the bare minimum, you'll need to [install SQLite](http://www.sqlite.org/download.html) in order to use Bestrew. SQLite, by itself, is a command line tool however, so you may prefer to use one of the many <a href="https://www.sqlite.org/cvstrac/wiki?p=ManagementTools">graphical interface apps available for SQLite</a>: such as [SQLiteMan](http://sqliteman.com/) which is free software available for [Windows, Linux](http://sqliteman.com/page/4.html) and [Mac](http://brewformulas.org/Sqliteman); or Navicat which is an excellent, paid, cross-platform database app for which the cheap-o version is only around $10.
+
+2. Open the ``bestrew.sqlite3`` database file
+3. begin entering works, venues and submissions into the appropriate database tables.
 
 
 ## Links
@@ -55,20 +49,6 @@ This is still an experimental application and may not be suitable for reliable u
 This project is based on several sources. 
 
 - [Writer's Database by Dmitri Popov](http://www.linux-magazine.com/w3/issue/103/084-086_workspace.pdf), part of [The Writer's Tools Extension for OpenOffice.org and LibreOffice](https://code.google.com/p/writertools/)
-- Uses [Split_HSQLDB_Wizard_v3c.odb](http://forum.openoffice.org/en/forum/viewtopic.php?f=83&t=61183) for Base
 - My [notes about submission tracking tools for writers](http://nocategories.net/ephemera/writing/writing-submission-tools/), overview of existing methods, feature wish list, etc.
 - [a write-up of the database design](https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md)
-- [ongoing conversation about the development of this database](http://en.libreofficeforum.org/node/6787)
 - [other applications and scripts designed for submission tracking](http://nocategories.net/ephemera/writing/writing-submission-tools/#apps)
-
-##Features Wishlist
-
-Beyond simple entry of data into a good structure, the writer would like to have an application to help keep track of what's going on. Here are some useful features that I can think of:
-
-- **submission count** — each time a work is listed as part of a submission record, add 1 to the submission count. if a work has been submitted many times, but status remains unpublished, that's notable. Likewise, it is useful to count how many times you've submitted to a particular venue, to help avoid overdoing it.
-- **simultaneous submission monitoring** — some venues accept simultaneous submissions. Most do not. This can get tricky to watch over, without some help. If a work is already part of an active submission, alert the user if it is entered again. Similarly, if the user already has an active submission with any venue, an alert should appear if they try to send an additional submission to that venue.
-- **submitting multiple works** — not all writers are submitting one short story at a time. For example, poets send submissions that can include 5-10 works as part of a single submission. This does not count as a "simultaneous submission" as described above.
-- **smart updates** — if the user marks a submission as "accepted" or "published" then mark the published work as published, accordingly, note the venue and date of publication, and remove the work from circulation so that it isn't available to be submitted again.
-- **combo box** — the user is likely to use the "submissions" form most often. Here, there's a place to make note of the work submitted. Also, there's a place to make note of the venue that work was submitted to. Both works and venues are described in detail elsewhere, so it would be useful to have a thing called a "combo box" ( http://en.wikipedia.org/wiki/Combo_box ). By default, the combo box would show all existing names, either of works or of venues. If you need to add one, just type it in the combo box, which will automatically associate the entry both with the submission record and also with a new record or either a work or a venue.
-- **days out** — a fairly standard feature of submissions trackers is to compare date sent to either date replied, or to the current date, to determine the number of days the submission has been active. Useful for determining whether up a followup e-mail is needed.
-- **import/export** — probably a more advanced feature than I know how to build, but most other apps and spreadsheets and databases can export at least a `.csv` file. It would be useful to be able to import/export these.
