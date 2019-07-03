@@ -1,15 +1,21 @@
 
 
 Bestrew is a database for tracking submissions
-==============================================
+===============================================================================
 
-There's a maxim out there, variously attributed, which says: "serious writers should keep their work in circulation until it either sells or the ink wears off".
+This is a tool intended to help writers (or other artists) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. It's called "bestrew" as in, "to spread around." 
 
-This is a tool intended to help writers (or other artists) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. 
+This project is a testbed for rapidly iterating on several ideas. For now, the project is an experiment designed to learn as much as possible.
 
-I call it "bestrew" because it's a funny word that means "to spread around." I made this after trying [a lot of different submissions tracking methods](http://nocategories.net/ephemera/writing/writing-submission-tools/). None of them were just right for my needs. 
+Eventual Goals:
 
-I'm just a writer looking for tools to help other writers do more powerful things with their text. As a humble HTML/CSS developer, I'm new to GitHub, SQLite and to application/database development in general, so I could use any input at all. I consider this project to be a fun excuse to learn new things. 
+- ***Incredibly high performance***. As creatives, we want to keep track of what's happening with our work, fast, so we can back to the real task of creating the work.
+
+- ***Simplicity***. Bestrew should be easy to learn and use. It should be anticipatory and avoid redundancy.
+ 
+- ***Flexibility***. It should be easy to manage information about, for exmaple, any venue/publication without any limitations. With some other tools, you're limited by what's available within a system or marketplace.
+
+- ***Reliability***. Crashing, hanging, or losing work should never happen.
 
 To request new features, ask questions or to discuss, have a look at <a href="https://github.com/dylan-k/bestrew/issues">the issues page</a>
 
@@ -17,9 +23,18 @@ To request new features, ask questions or to discuss, have a look at <a href="ht
 Bestrew: What Does it Do?
 -------------------------------------------------------------------------------
 
-Bestrew is a simple database designed to track submissions, publications, and details about them. This is a simple overview of what Bestrew is designed to track. You'll find much more detailed information in the create script, `create-bestrew.sql`. .
+Bestrew is a simple database designed to track submissions, publications, and details about them. 
 
-1. What have you created? ("works")
+Bestrew should help you to know:
+
+  - which works are currently submitted for publication?
+  - which works have been published?
+  - which submissions were accepted/ or not?
+  - how long have submissions been open?
+
+This is a simple overview of what Bestrew is designed to track.
+
+1. **Works**. What have you created?
   - title
   - type
   - status
@@ -27,40 +42,53 @@ Bestrew is a simple database designed to track submissions, publications, and de
     - publication venue
     - publication date
   - a recent copy of the work
-2. Where have you sent your work or where might you send it? ("venues")
+2. **Venues**. Where have you sent your work or where _might_ you send it?
   - title
   - type
   - contact info.  
   - submission guideline details
-3. Which works have you sent to which venues and what happened? ("submissions")
+3. **Submissions**. Which works went to which venues and what happened?
   - which works have been sent out?
   - to which venues?
   - how long have they been out?
   - what was the result of the submission?
   - (poets) include multiple manuscripts as part of a single submission?
-4. Where have you performed and what did you perform there ("gigs")
+4. **Portfolio**. Which works were published/displayed/performed and where?
   - this is a work in progress. suggestions welcome.
+
+You'll find much more detailed information in the create script, `create-bestrew.sql`.
 
 
 Getting Started with Bestrew
 -------------------------------------------------------------------------------
 
-**This version is for use with SQLite**. 
+At the moment, Bestrew is a very simple database, built with [SQLite](https://www.sqlite.org). SQLite is a command line tool, so you may prefer to use a graphical interface such as [SQLiteMan](http://sqliteman.yarpen.cz/) which is free software available for [Windows, Linux](http://sqliteman.com/page/4.html) and [Mac](http://brewformulas.org/Sqliteman); or a commercial app like Navicat.
 
-At the bare minimum, you'll need to [install SQLite](http://www.sqlite.org/download.html) in order to use Bestrew. SQLite, by itself, is a command line tool however, so you may prefer to use one of the many <a href="https://www.sqlite.org/cvstrac/wiki?p=ManagementTools">graphical interface apps available for SQLite</a>: such as [SQLiteMan](http://sqliteman.com/) which is free software available for [Windows, Linux](http://sqliteman.com/page/4.html) and [Mac](http://brewformulas.org/Sqliteman); or Navicat which is an excellent, paid, cross-platform database app for which the cheap-o version is only around $10.
+1. [Install SQLite Software on your Linux, Mac, or Windows machine](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm).
+2. Tell SQLite to make a database ``sqlite3 bestrew.db``.
+3. Run  ``.read create-bestrew.sql`` script to build the database.
+4. Enter works, venues, and submissions into the database tables.
+5. Explore the views to see various reports.
 
-1. Install SQLite Software
-2. Run the ``create-bestrew.sql`` script to build the database
-3. begin entering works, venues and submissions into the appropriate database tables.
-4. In addition to the tables, there are several views to help you along your way.
 
-
-Links
+Notes
 -------------------------------------------------------------------------------
 
 This project is based on several sources. 
 
 - [Writer's Database by Dmitri Popov](http://www.linux-magazine.com/w3/issue/103/084-086_workspace.pdf), part of [The Writer's Tools Extension for OpenOffice.org and LibreOffice](https://code.google.com/p/writertools/)
-- My [notes about submission tracking tools for writers](http://nocategories.net/ephemera/writing/writing-submission-tools/), overview of existing methods, feature wish list, etc.
+- My [notes about submission tracking tools for writers](https://nocategories.net/ephemera/writing-submission-tools), overview of existing methods, feature wish list, etc.
 - [a write-up of the database design](https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md)
 - [other applications and scripts designed for submission tracking](http://nocategories.net/ephemera/writing/writing-submission-tools/#apps)
+
+This project is growing!
+
+- see also: [Python Flask UI for Bestrew](https://github.com/preston-stone/bestrew-flask)
+
+
+Changelog
+-------------------------------------------------------------------------------
+
+**This version is for use with SQLite**. 
+
+Previous versions used [LibreOffice Base](https://github.com/dylan-k/bestrew/tree/v0.6) and [Tiddlywiki](https://github.com/dylan-k/bestrew/tree/v0.7)
