@@ -80,6 +80,7 @@ This project is based on several sources.
 - My [notes about submission tracking tools for writers](https://nocategories.net/ephemera/writing-submission-tools), overview of existing methods, feature wish list, etc.
 - [a write-up of the database design](https://github.com/dylan-k/bestrew/blob/master/writers-database_data-model.md)
 - [other applications and scripts designed for submission tracking](http://nocategories.net/ephemera/writing/writing-submission-tools/#apps)
+- [Types of Database in SQL](https://www.scaler.com/topics/sql/types-of-database-in-sql/)
 
 This project is growing!
 
