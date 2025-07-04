@@ -1,7 +1,9 @@
 
 
-Bestrew is a database for tracking submissions
+Bestrew is a Database for Writers
 ===============================================================================
+
+> "Writers should keep their work in circulation until it either sells or the ink wears off."
 
 This is a tool intended to help writers (or other artists) to keep track of their submissions, venues they'd like to submit to, and the works that they would like to publish. It's called "bestrew" as in, "to spread around." 
 
@@ -13,7 +15,7 @@ Eventual Goals:
 
 - ***Simplicity***. Bestrew should be easy to learn and use. It should be anticipatory and avoid redundancy.
  
-- ***Flexibility***. It should be easy to manage information about, for exmaple, any venue/publication without any limitations. With some other tools, you're limited by what's available within a system or marketplace.
+- ***Flexibility***. It should be easy to manage information about, for exmaple, any venue/publication. With some other tools, you're limited by which publications are already within a system or marketplace.
 
 - ***Reliability***. Crashing, hanging, or losing work should never happen.
 
